@@ -3,13 +3,12 @@ class animali{
     razza;
     nzampe;
     img;
-    constructor(tipo,razza,nzampe){
+    constructor(tipo,razza,nzampe,img){
         this.tipo=tipo;
         this.razza=razza;
         this.nzampe=nzampe;
+        this.img=img;
         
     }
-    draw(){
-        
-    }
+   
 }

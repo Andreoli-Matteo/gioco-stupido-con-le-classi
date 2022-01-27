@@ -1,4 +1,4 @@
-import Animale from "./animale.js"
+import Animale from "./animali.js";
 
 export default class Fattoria {
     constructor() {
@@ -15,18 +15,18 @@ export default class Fattoria {
             document.getElementById("btMu").addEventListener('click', this.cMucca);
         }
     }
-
+//andreoli sei un gallo
     cGallo() {
 
-        var gallo = new Animale("Gallo", "Andalusa", "2 zampe")
+        var gallo = new Animale("Gallo", "rapace", "2 zampe", "/img/gallo.jpg")
         document.getElementById("idImg").src = gallo.img;
         document.getElementById("idTipo").innerHTML = gallo.tipo;
         document.getElementById("idRazza").innerHTML = gallo.razza;
         document.getElementById("idZampe").innerHTML = gallo.nzampe;
     }
     cMaiale() {
-
-        var maiale = new Animale("Maiale", "Andalusa", "4 zampe")
+//freeminasi
+        var maiale = new Animale("Maiale", "carlozzo", "4 zampe", "/img/download(1).jpg")
         document.getElementById("idImg").src = maiale.img;
         document.getElementById("idTipo").innerHTML = maiale.tipo;
         document.getElementById("idRazza").innerHTML = maiale.razza;
@@ -34,7 +34,7 @@ export default class Fattoria {
     }
     cMucca() {
 
-        var mucca = new Animale("Mucca", "Andalusa", "4 zampe")
+        var mucca = new Animale("Mucca", "guido", "4 zampe","/img/download(1).jpg")
         document.getElementById("idImg").src = mucca.img;
         document.getElementById("idTipo").innerHTML = mucca.tipo;
         document.getElementById("idRazza").innerHTML = mucca.razza;
